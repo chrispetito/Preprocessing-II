@@ -1,4 +1,5 @@
 .header{
+  border: 1px solid red;
 
   .header-content {
     margin: 20px 0;
@@ -32,20 +33,45 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border: 1px solid red;
+
+    @media @mobile {
+      width: 500px;
+      margin: 0;
+      padding: 0;
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      border: 1px solid red;
+      
+      @media @mobile {
+        width: 96%;
+        margin-left: 20px;
+        margin-top: 0px;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        margin-left: 20px;
+        margin-bottom: 40px;
+      }
       img {
         border-radius: 10px;
+        border: 1px solid red;
+
+        @media @mobile {
+          width: 90%;
+        }
+
       }
     }
   }
@@ -53,6 +79,13 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    border: 1px solid red;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -68,30 +101,57 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    border: 1px solid red;
+
+    @media @mobile {
+      width: 460px;
+      margin-right: 32px;
+      margin: 0;
+      margin-bottom: 24px;
+    }
 
     img {
       border-radius: 10px;
     }
   }
+}// home
 
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
 
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
+.content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed @navigation-border;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
 
-      .btn {
-        .sign-up-button(44px, 200px, 16px);
-        padding: 14px 52px;
-        font-size: 1.8rem;
-        color: @white;
-        background: @eastern-blue;
+  @media @mobile {
+    display: column;
+    flex-wrap: wrap;
+    padding-right: 26px;
+  }
+
+  .destination {
+    width: 30%;
+    margin-bottom: 30px;
+
+    @media @mobile {
+      width: 470px;
+      margin-left: 70px;
+      padding-right: 10px;
+    }
+
+    .btn {
+      .sign-up-button(44px, 200px, 16px);
+      padding: 14px 52px;
+      font-size: 1.8rem;
+      color: @white;
+      background: @eastern-blue;
+
+      @media @mobile {
+        width: 360px;
+        padding-left: 140px;
       }
     }
   }
-}// home
+}
 
