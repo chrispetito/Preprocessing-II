@@ -176,14 +176,14 @@ img {
   justify-content: flex-end;
   align-items: center;
 }
+.nav-container:hover {
+  color: #C0C0C0;
+}
 @media (max-width: 500px) {
   .nav-container h1 {
     font-size: 3rem;
     margin-left: 10px;
     margin-bottom: 5px;
-  }
-  .nav-container h1:hover {
-    color: #C0C0C0;
   }
 }
 .nav-container .nav-options {
