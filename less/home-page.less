@@ -1,17 +1,19 @@
-.header{
 
-  .header-content {
-    margin: 20px 0;
-
-    p {
-      border-bottom: 2px dashed lightgray;
-      margin-bottom: 20px;
-      padding-bottom: 20px;
-    }
-  }
-}
 
 .home {
+
+  .header{
+
+    .header-content {
+      margin: 20px 0;
+  
+      p {
+        border-bottom: 2px dashed @silver;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -69,6 +71,15 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .sign-up-button(44px, 200px, 16px);
+        padding: 14px 52px;
+        font-size: 1.8rem;
+        color: @white;
+        background: @eastern-blue;
+      }
     }
   }
 }// home
+
